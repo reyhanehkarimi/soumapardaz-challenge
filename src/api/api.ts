@@ -18,7 +18,7 @@ export interface GetNewsParams {
 }
 
 export const getNews = async (params: GetNewsParams = {}) => {
-  const { take = 10, searchKeyword, selectedDay, sourceTypeId, selectedTags, skip } = params
+  const { take = 20, searchKeyword, selectedDay, sourceTypeId, selectedTags, skip } = params
   try {
     const payload = {
       skip,
